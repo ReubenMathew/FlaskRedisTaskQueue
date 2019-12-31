@@ -7,8 +7,11 @@ verify_ssl = true
 
 [packages]
 flask = "*"
-rq = "*"
 redis = "*"
+dill = "*"
+celery = {extras = ["redis"],version = "*"}
+gevent = "*"
+simplejson = "*"
 
 [requires]
 python_version = "3.8"
